@@ -1,0 +1,31 @@
+
+GLFW
+
+
+ UBUNTU
+
+sudo apt-get install libglfw3
+sudo apt-get install libglfw3-dev
+
+ OTHER
+
+  download
+  - https://www.glfw.org/download
+
+    -open folder and-
+   cmake .
+   make
+   sudo make install
+
+
+    GLEW
+    - sudo apt-get install libglew-dev
+
+
+GLAD
+
+ git clone https://github.com/Dav1dde/glad.git
+ cd glad
+ cmake ./
+ make
+ sudo cp -a include /usr/local/

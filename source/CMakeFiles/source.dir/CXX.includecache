@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nonswave/Documentos/DEV/C++/opengl-test/source/Main.cpp
+headers.hpp
+/home/nonswave/Documentos/DEV/C++/opengl-test/source/headers.hpp
+ventana.hpp
+/home/nonswave/Documentos/DEV/C++/opengl-test/source/ventana.hpp
+
+/home/nonswave/Documentos/DEV/C++/opengl-test/source/headers.hpp
+GL/glew.h
+-
+GLFW/glfw3.h
+-
+memory
+-
+stdio.h
+-
+
+/home/nonswave/Documentos/DEV/C++/opengl-test/source/ventana.cpp
+headers.hpp
+/home/nonswave/Documentos/DEV/C++/opengl-test/source/headers.hpp
+ventana.hpp
+/home/nonswave/Documentos/DEV/C++/opengl-test/source/ventana.hpp
+
+/home/nonswave/Documentos/DEV/C++/opengl-test/source/ventana.hpp
+headers.hpp
+/home/nonswave/Documentos/DEV/C++/opengl-test/source/headers.hpp
+

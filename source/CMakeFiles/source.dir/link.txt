@@ -1,0 +1,1 @@
+/usr/bin/c++  "-std=c++17"   CMakeFiles/source.dir/Main.cpp.o CMakeFiles/source.dir/ventana.cpp.o  -o source  -lGL -ldl -lglfw 
