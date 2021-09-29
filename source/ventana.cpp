@@ -33,10 +33,15 @@ void Ventana::init()
 
 	while (!glfwWindowShouldClose(*ventana))
 	{
-        /* main loop*/
-		glClear(GL_COLOR_BUFFER_BIT);
+        
+	glClear(GL_COLOR_BUFFER_BIT);
         glClearColor(0.4f,0.5f,0.7f,1);
           
+		
+	 //  MAIN LOOP	
+		
+		
+		
 		
    
 
