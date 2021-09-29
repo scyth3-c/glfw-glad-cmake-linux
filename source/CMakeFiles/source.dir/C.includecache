@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nonswave/Documentos/DEV/C++/opengl-test/source/glad.c
+stdio.h
+-
+string.h
+-
+glad/glad.h
+-
+

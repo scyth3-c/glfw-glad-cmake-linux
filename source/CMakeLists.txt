@@ -11,4 +11,6 @@ add_executable(
     "glad.c"
 )
 
+find_package(OpenGL REQUIRED)
 target_link_libraries(${PROJECT_NAME} GL dl glfw)
+target_link_libraries(${PROJECT_NAME} OpenGL::GL)

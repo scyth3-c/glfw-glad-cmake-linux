@@ -152,6 +152,33 @@ Main.cpp.s:
 	cd /home/nonswave/Documentos/DEV/C++/opengl-test && $(MAKE) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/Main.cpp.s
 .PHONY : Main.cpp.s
 
+glad.o: glad.c.o
+
+.PHONY : glad.o
+
+# target to build an object file
+glad.c.o:
+	cd /home/nonswave/Documentos/DEV/C++/opengl-test && $(MAKE) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/glad.c.o
+.PHONY : glad.c.o
+
+glad.i: glad.c.i
+
+.PHONY : glad.i
+
+# target to preprocess a source file
+glad.c.i:
+	cd /home/nonswave/Documentos/DEV/C++/opengl-test && $(MAKE) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/glad.c.i
+.PHONY : glad.c.i
+
+glad.s: glad.c.s
+
+.PHONY : glad.s
+
+# target to generate assembly for a file
+glad.c.s:
+	cd /home/nonswave/Documentos/DEV/C++/opengl-test && $(MAKE) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/glad.c.s
+.PHONY : glad.c.s
+
 ventana.o: ventana.cpp.o
 
 .PHONY : ventana.o
@@ -191,6 +218,9 @@ help:
 	@echo "... Main.o"
 	@echo "... Main.i"
 	@echo "... Main.s"
+	@echo "... glad.o"
+	@echo "... glad.i"
+	@echo "... glad.s"
 	@echo "... ventana.o"
 	@echo "... ventana.i"
 	@echo "... ventana.s"
