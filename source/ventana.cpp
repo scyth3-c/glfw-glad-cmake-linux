@@ -33,12 +33,17 @@ void Ventana::init()
 
 	while (!glfwWindowShouldClose(*ventana))
 	{
-        /* main loop*/
+        
 		glClear(GL_COLOR_BUFFER_BIT);
         glClearColor(0.4f,0.5f,0.7f,1);
           
-		
-   
+		//  MAIN LOOP
+         
+		 glBegin(GL_POLYGON);
+		   glVertex2f(-0.3f, 0.0);
+		   glVertex2d(0.3f,0.0);
+		   glVertex2d(0.0,0.5);
+		 glEnd();
 
 		glfwSwapBuffers(*ventana);
 

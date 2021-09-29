@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/nonswave/Documentos/DEV/C++/opengl-test/source/Main.cpp
-headers.hpp
-/home/nonswave/Documentos/DEV/C++/opengl-test/source/headers.hpp
-ventana.hpp
-/home/nonswave/Documentos/DEV/C++/opengl-test/source/ventana.hpp
-
 /home/nonswave/Documentos/DEV/C++/opengl-test/source/headers.hpp
 GL/glew.h
 -
