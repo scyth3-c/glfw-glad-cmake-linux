@@ -44,4 +44,15 @@ bash clean.sh
 
 ```
 
+# code
+  
+  in the "source" folder you will find the source files where all the code will be placed. 
+  
+  in "ventana.cpp" the main code for configuration and use of glfw is centered
+  
+## ventana.hpp format
+ ![ventana-hpp](https://user-images.githubusercontent.com/52190352/135206285-5e408024-1a03-47bc-b64c-23908f35ee12.png)
+
+
+
 
