@@ -8,6 +8,7 @@ add_executable(
     "ventana.cpp"
     "headers.hpp"
     "ventana.hpp"
+    "glad.c"
 )
 
 target_link_libraries(${PROJECT_NAME} GL dl glfw)
