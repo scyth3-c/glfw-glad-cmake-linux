@@ -44,73 +44,84 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nonswave/Documentos/DEV/C++/opengl-test
+CMAKE_SOURCE_DIR = /home/nonswave/Descargas/renew
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nonswave/Documentos/DEV/C++/opengl-test
+CMAKE_BINARY_DIR = /home/nonswave/Descargas/renew
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: source/all
+all: CMakeFiles/source.dir/all
+all: CMakeFiles/glad.dir/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: source/preinstall
+preinstall:
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: source/clean
+clean: CMakeFiles/source.dir/clean
+clean: CMakeFiles/glad.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory source
-
-# Recursive "all" directory target.
-source/all: source/CMakeFiles/source.dir/all
-
-.PHONY : source/all
-
-# Recursive "preinstall" directory target.
-source/preinstall:
-
-.PHONY : source/preinstall
-
-# Recursive "clean" directory target.
-source/clean: source/CMakeFiles/source.dir/clean
-
-.PHONY : source/clean
-
-#=============================================================================
-# Target rules for target source/CMakeFiles/source.dir
+# Target rules for target CMakeFiles/source.dir
 
 # All Build rule for target.
-source/CMakeFiles/source.dir/all:
-	$(MAKE) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/depend
-	$(MAKE) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nonswave/Documentos/DEV/C++/opengl-test/CMakeFiles --progress-num=1,2,3,4 "Built target source"
-.PHONY : source/CMakeFiles/source.dir/all
+CMakeFiles/source.dir/all: CMakeFiles/glad.dir/all
+	$(MAKE) -f CMakeFiles/source.dir/build.make CMakeFiles/source.dir/depend
+	$(MAKE) -f CMakeFiles/source.dir/build.make CMakeFiles/source.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nonswave/Descargas/renew/CMakeFiles --progress-num=3,4,5 "Built target source"
+.PHONY : CMakeFiles/source.dir/all
 
 # Build rule for subdir invocation for target.
-source/CMakeFiles/source.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nonswave/Documentos/DEV/C++/opengl-test/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/source.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nonswave/Documentos/DEV/C++/opengl-test/CMakeFiles 0
-.PHONY : source/CMakeFiles/source.dir/rule
+CMakeFiles/source.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nonswave/Descargas/renew/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/source.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nonswave/Descargas/renew/CMakeFiles 0
+.PHONY : CMakeFiles/source.dir/rule
 
 # Convenience name for target.
-source: source/CMakeFiles/source.dir/rule
+source: CMakeFiles/source.dir/rule
 
 .PHONY : source
 
 # clean rule for target.
-source/CMakeFiles/source.dir/clean:
-	$(MAKE) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/clean
-.PHONY : source/CMakeFiles/source.dir/clean
+CMakeFiles/source.dir/clean:
+	$(MAKE) -f CMakeFiles/source.dir/build.make CMakeFiles/source.dir/clean
+.PHONY : CMakeFiles/source.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/glad.dir
+
+# All Build rule for target.
+CMakeFiles/glad.dir/all:
+	$(MAKE) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/depend
+	$(MAKE) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nonswave/Descargas/renew/CMakeFiles --progress-num=1,2 "Built target glad"
+.PHONY : CMakeFiles/glad.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/glad.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nonswave/Descargas/renew/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/glad.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nonswave/Descargas/renew/CMakeFiles 0
+.PHONY : CMakeFiles/glad.dir/rule
+
+# Convenience name for target.
+glad: CMakeFiles/glad.dir/rule
+
+.PHONY : glad
+
+# clean rule for target.
+CMakeFiles/glad.dir/clean:
+	$(MAKE) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/clean
+.PHONY : CMakeFiles/glad.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

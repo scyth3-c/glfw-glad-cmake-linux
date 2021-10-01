@@ -1,5 +1,4 @@
-/home/nonswave/Documentos/DEV/C++/opengl-test/CMakeFiles/rebuild_cache.dir
-/home/nonswave/Documentos/DEV/C++/opengl-test/CMakeFiles/edit_cache.dir
-/home/nonswave/Documentos/DEV/C++/opengl-test/source/CMakeFiles/rebuild_cache.dir
-/home/nonswave/Documentos/DEV/C++/opengl-test/source/CMakeFiles/edit_cache.dir
-/home/nonswave/Documentos/DEV/C++/opengl-test/source/CMakeFiles/source.dir
+/home/nonswave/Descargas/renew/CMakeFiles/rebuild_cache.dir
+/home/nonswave/Descargas/renew/CMakeFiles/edit_cache.dir
+/home/nonswave/Descargas/renew/CMakeFiles/source.dir
+/home/nonswave/Descargas/renew/CMakeFiles/glad.dir

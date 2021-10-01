@@ -17,6 +17,7 @@ public:
 	static void init();  				 	 	/*this in main.cpp is so important  */
 	static void error_callback(int, const char*); 	          	/*control funcs */
 	static void key_callback(GLFWwindow*, int, int, int, int);	/*control funcs */
+	static GLuint shader(std::string&, GLenum);
 
 };
 

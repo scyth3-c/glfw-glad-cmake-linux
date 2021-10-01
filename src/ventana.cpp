@@ -32,10 +32,8 @@ void Ventana::init()
 	glfwSwapInterval(1);                      /*intervar for swap it */
 
 	while (!glfwWindowShouldClose(*ventana))
-	{
-          
-		//  MAIN LOOP
-         
+	{     
+ 
 
 		glfwSwapBuffers(*ventana);
 
@@ -56,4 +54,18 @@ void Ventana::key_callback(GLFWwindow* target, int key, int scancode, int action
 	if (key == GLFW_KEY_ESCAPE && actions == GLFW_PRESS) {
 		glfwSetWindowShouldClose(target, GLFW_TRUE);        /* close window if escape is pressed*/
 	}
+}
+
+GLuint Ventana::shader(std::string& source, GLenum type) {
+  
+  GLuint vertex{0};
+
+  if(!source.empty()) {
+   const GLchar* vertex_text = const_cast<GLchar*>(source.c_str());
+  vertex = glCreateShader(type);
+  glShaderSource(vertex,1,&vertex_text, NULL);
+  glCompileShader(vertex);
+  }
+ 
+  return vertex;
 }

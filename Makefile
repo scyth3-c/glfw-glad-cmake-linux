@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nonswave/Documentos/DEV/C++/opengl-test
+CMAKE_SOURCE_DIR = /home/nonswave/Descargas/renew
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nonswave/Documentos/DEV/C++/opengl-test
+CMAKE_BINARY_DIR = /home/nonswave/Descargas/renew
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nonswave/Documentos/DEV/C++/opengl-test/CMakeFiles /home/nonswave/Documentos/DEV/C++/opengl-test/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nonswave/Descargas/renew/CMakeFiles /home/nonswave/Descargas/renew/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nonswave/Documentos/DEV/C++/opengl-test/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nonswave/Descargas/renew/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -120,8 +120,102 @@ source: cmake_check_build_system
 
 # fast build rule for target.
 source/fast:
-	$(MAKE) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/build
+	$(MAKE) -f CMakeFiles/source.dir/build.make CMakeFiles/source.dir/build
 .PHONY : source/fast
+
+#=============================================================================
+# Target rules for targets named glad
+
+# Build rule for target.
+glad: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 glad
+.PHONY : glad
+
+# fast build rule for target.
+glad/fast:
+	$(MAKE) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
+.PHONY : glad/fast
+
+external/src/glad.o: external/src/glad.c.o
+
+.PHONY : external/src/glad.o
+
+# target to build an object file
+external/src/glad.c.o:
+	$(MAKE) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/external/src/glad.c.o
+.PHONY : external/src/glad.c.o
+
+external/src/glad.i: external/src/glad.c.i
+
+.PHONY : external/src/glad.i
+
+# target to preprocess a source file
+external/src/glad.c.i:
+	$(MAKE) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/external/src/glad.c.i
+.PHONY : external/src/glad.c.i
+
+external/src/glad.s: external/src/glad.c.s
+
+.PHONY : external/src/glad.s
+
+# target to generate assembly for a file
+external/src/glad.c.s:
+	$(MAKE) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/external/src/glad.c.s
+.PHONY : external/src/glad.c.s
+
+src/Main.o: src/Main.cpp.o
+
+.PHONY : src/Main.o
+
+# target to build an object file
+src/Main.cpp.o:
+	$(MAKE) -f CMakeFiles/source.dir/build.make CMakeFiles/source.dir/src/Main.cpp.o
+.PHONY : src/Main.cpp.o
+
+src/Main.i: src/Main.cpp.i
+
+.PHONY : src/Main.i
+
+# target to preprocess a source file
+src/Main.cpp.i:
+	$(MAKE) -f CMakeFiles/source.dir/build.make CMakeFiles/source.dir/src/Main.cpp.i
+.PHONY : src/Main.cpp.i
+
+src/Main.s: src/Main.cpp.s
+
+.PHONY : src/Main.s
+
+# target to generate assembly for a file
+src/Main.cpp.s:
+	$(MAKE) -f CMakeFiles/source.dir/build.make CMakeFiles/source.dir/src/Main.cpp.s
+.PHONY : src/Main.cpp.s
+
+src/ventana.o: src/ventana.cpp.o
+
+.PHONY : src/ventana.o
+
+# target to build an object file
+src/ventana.cpp.o:
+	$(MAKE) -f CMakeFiles/source.dir/build.make CMakeFiles/source.dir/src/ventana.cpp.o
+.PHONY : src/ventana.cpp.o
+
+src/ventana.i: src/ventana.cpp.i
+
+.PHONY : src/ventana.i
+
+# target to preprocess a source file
+src/ventana.cpp.i:
+	$(MAKE) -f CMakeFiles/source.dir/build.make CMakeFiles/source.dir/src/ventana.cpp.i
+.PHONY : src/ventana.cpp.i
+
+src/ventana.s: src/ventana.cpp.s
+
+.PHONY : src/ventana.s
+
+# target to generate assembly for a file
+src/ventana.cpp.s:
+	$(MAKE) -f CMakeFiles/source.dir/build.make CMakeFiles/source.dir/src/ventana.cpp.s
+.PHONY : src/ventana.cpp.s
 
 # Help Target
 help:
@@ -132,6 +226,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... source"
+	@echo "... glad"
+	@echo "... external/src/glad.o"
+	@echo "... external/src/glad.i"
+	@echo "... external/src/glad.s"
+	@echo "... src/Main.o"
+	@echo "... src/Main.i"
+	@echo "... src/Main.s"
+	@echo "... src/ventana.o"
+	@echo "... src/ventana.i"
+	@echo "... src/ventana.s"
 .PHONY : help
 
 

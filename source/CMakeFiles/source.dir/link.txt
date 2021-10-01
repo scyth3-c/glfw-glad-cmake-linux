@@ -1,1 +1,0 @@
-/usr/bin/c++  "-std=c++17"   CMakeFiles/source.dir/Main.cpp.o CMakeFiles/source.dir/ventana.cpp.o CMakeFiles/source.dir/glad.c.o  -o source  -lGL -ldl -lglfw /usr/lib/x86_64-linux-gnu/libGL.so 
