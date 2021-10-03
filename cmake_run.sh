@@ -1,6 +1,6 @@
 #!/bin/bash
 
 bash clean.sh ;
-cmake .
-cmake --build .
-./source
+cmake . ;
+cmake --build . ;
+./source ;
