@@ -52,6 +52,9 @@ bash clean.sh
   
 ## ventana.hpp format guide
  ![ventana-hpp](https://user-images.githubusercontent.com/52190352/135206285-5e408024-1a03-47bc-b64c-23908f35ee12.png)
+ 
+ 
+  SOURCE CODE [ventana.cpp]
 
 
 
