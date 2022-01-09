@@ -5,7 +5,10 @@ prepare everything to compile and work with glfw and glad in c++
 
 it is only necessary to clone the repository and run the bash files in the [INSTALL](./INSTALL%20GLFW%20-%20GLAD%20-%20GLEW) folder either as "glfw" or "glad".
 ```
+ 
  cd 'INSTALL GLFW - GLAD - GLEW'/ 
+ 
+ sudo bash 1_download_zip.sh
  
  sudo bash installGlfw.sh
  
