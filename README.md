@@ -1,4 +1,4 @@
-# glfw-glad-cmake-linux
+# all already for glfw-glad-cmake-linux
 
 glfw3, glad and glew with cmake in linux,
 prepare everything to compile and work with glfw and glad in c++ 
