@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/source.dir/src/Main.cpp.o CMakeFiles/source.dir/src/ventana.cpp.o  -o source  /usr/local/lib/libglfw3.a libglad.a -ldl /usr/lib/x86_64-linux-gnu/librt.so -lm -ldl /usr/lib/x86_64-linux-gnu/libX11.so -lpthread 

@@ -1,4 +1,0 @@
-/home/nonswave/Descargas/renew/CMakeFiles/rebuild_cache.dir
-/home/nonswave/Descargas/renew/CMakeFiles/edit_cache.dir
-/home/nonswave/Descargas/renew/CMakeFiles/source.dir
-/home/nonswave/Descargas/renew/CMakeFiles/glad.dir
